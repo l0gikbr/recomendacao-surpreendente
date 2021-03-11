@@ -39,7 +39,9 @@ export default {
     '@nuxtjs/style-resources',
     '@nuxtjs/axios',
   ],
-
+  bootstrapVue: {
+    icons: false,
+  },
   // Build Configuration: https://go.nuxtjs.dev/config-build
   build: {},
 }
