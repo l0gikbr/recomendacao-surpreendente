@@ -105,8 +105,8 @@ export default {
 </script>
 <style scoped lang="scss">
 .container-countdown {
-  max-width: 85%;
-  margin: 7rem auto;
+  max-width: 70%;
+  margin: 3rem auto;
 }
 /* Sets the containers height and width */
 .base-timer {
@@ -136,12 +136,12 @@ export default {
     justify-content: center;
 
     h3 {
-      font-size: 2.75rem;
+      font-size: 2.4rem;
       margin-bottom: 0;
     }
 
     span {
-      font-size: 11rem;
+      font-size: 9.75rem;
       line-height: 0.95;
     }
   }
@@ -168,7 +168,7 @@ export default {
 @media only screen and (max-width: 767px) {
   .container-countdown {
     max-width: 95%;
-    margin: 2.5rem auto;
+    margin: 2rem 0 2.5rem auto;
   }
 
   .base-timer {

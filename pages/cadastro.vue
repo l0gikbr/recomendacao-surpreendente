@@ -22,8 +22,8 @@
             <h2>Participe do programa</h2>
             <titulo />
             <h2>
-              e ganhe <strong>3 meses</strong> de
-              <strong>garantia adicional.</strong>
+              e ganhe um <strong>desconto especial</strong> na
+              <strong> Midea Store</strong>.
             </h2>
           </div>
         </div>
@@ -40,7 +40,7 @@
         </h2>
 
         <h2>
-          Você sai ganhando, as outras pessoas também. <br />
+          Você sai ganhando, as outras pessoas também.
           <strong>É só se cadastrar:</strong>
         </h2>
 
@@ -74,27 +74,18 @@
                 ></b-form-input>
               </b-form-group>
 
-              <b-form-group label="Onde comprou:" label-for="ondeComprou">
-                <b-form-input
-                  id="ondeComprou"
-                  v-model="form.ondeComprou"
-                  required
-                ></b-form-input>
-              </b-form-group>
-
-              <b-form-group label="Número da Nota Fiscal:" label-for="numeroNf">
-                <b-form-input
-                  id="numeroNf"
-                  v-model="form.numeroNf"
-                  type="tel"
-                  required
-                ></b-form-input>
-              </b-form-group>
-
               <b-form-group label="Nome:" label-for="nome">
                 <b-form-input
                   id="nome"
                   v-model="form.nome"
+                  required
+                ></b-form-input>
+              </b-form-group>
+
+              <b-form-group label="Sobrenome:" label-for="sobrenome">
+                <b-form-input
+                  id="sobrenome"
+                  v-model="form.sobrenome"
                   required
                 ></b-form-input>
               </b-form-group>
@@ -121,7 +112,48 @@
                 ></b-form-input>
               </b-form-group>
 
-              <b-form-group label="CEP:" label-for="cep">
+              <!-- <b-form-group label="Onde comprou:" label-for="ondeComprou">
+                <b-form-input
+                  id="ondeComprou"
+                  v-model="form.ondeComprou"
+                  required
+                ></b-form-input>
+              </b-form-group> -->
+
+              <b-form-group label="Número da Nota Fiscal:" label-for="numeroNf">
+                <b-form-input
+                  id="numeroNf"
+                  v-model="form.numeroNf"
+                  type="tel"
+                  required
+                ></b-form-input>
+              </b-form-group>
+
+              <b-form-group label="Endereço:" label-for="endereco">
+                <b-form-input
+                  id="endereco"
+                  v-model="form.endereco"
+                  required
+                ></b-form-input>
+              </b-form-group>
+
+              <b-form-group label="Cidade:" label-for="cidade">
+                <b-form-input
+                  id="cidade"
+                  v-model="form.cidade"
+                  required
+                ></b-form-input>
+              </b-form-group>
+
+              <b-form-group label="Estado:" label-for="estado">
+                <b-form-input
+                  id="estado"
+                  v-model="form.estado"
+                  required
+                ></b-form-input>
+              </b-form-group>
+
+              <!-- <b-form-group label="CEP:" label-for="cep">
                 <b-form-input
                   id="cep"
                   v-model="form.cep"
@@ -129,20 +161,20 @@
                   type="tel"
                   required
                 ></b-form-input>
-              </b-form-group>
+              </b-form-group> -->
 
               <b-form-group>
                 <b-form-checkbox-group v-model="form.checked">
                   <b-form-checkbox value="Aceito ser avisado"
                     >Quero ser avisado para <br />
-                    ganhar 3 meses de garantia</b-form-checkbox
+                    ganhar o desconto especial</b-form-checkbox
                   >
                 </b-form-checkbox-group>
               </b-form-group>
 
               <div class="button">
                 <b-button type="submit" variant="azul"
-                  >Quero ser Recomendador Midea</b-button
+                  >Quero fazer parte</b-button
                 >
               </div>
             </b-form>
@@ -183,12 +215,16 @@ export default {
     return {
       form: {
         nomeProduto: '',
-        ondeComprou: '',
+        // ondeComprou: '',
         numeroNf: '',
         nome: '',
+        sobrenome: '',
         telefoneCelular: '',
         email: '',
-        cep: '',
+        endereco: '',
+        cidade: '',
+        estado: '',
+        // cep: '',
         checked: [],
         utm_campaign: '',
         utm_source: '',
@@ -315,7 +351,7 @@ export default {
     bottom: 0;
     left: 0;
     width: 100%;
-    height: 24%;
+    height: 19.5%;
     z-index: -1;
   }
 
@@ -338,7 +374,7 @@ export default {
 
     img {
       position: absolute;
-      height: 104%;
+      height: 100%;
       max-width: unset;
       left: -69%;
       top: 1%;
@@ -369,7 +405,7 @@ export default {
   }
 
   h2 {
-    font-size: 2.5rem;
+    font-size: 2.25rem;
     margin-bottom: 2.5rem;
 
     strong {
@@ -424,49 +460,56 @@ export default {
 
   .button {
     padding-top: 3.5rem;
+    text-align: center;
   }
 }
 
 @media only screen and (max-width: 1699px) {
   #main .imageCol img {
-    left: -55%;
+    left: -65%;
   }
 }
 
 @media only screen and (max-width: 1599px) {
   #main .imageCol img {
-    left: -49%;
+    left: -55%;
   }
 }
 
 @media only screen and (max-width: 1499px) {
   #main .imageCol img {
-    left: -37%;
+    left: -50%;
   }
 }
 
 @media only screen and (max-width: 1399px) {
   #main .imageCol img {
-    left: -34.5%;
+    left: -47%;
   }
 }
 
 @media only screen and (max-width: 1199px) {
   #main .imageCol img {
-    left: -44%;
+    left: -64%;
   }
 }
 
 @media only screen and (max-width: 1099px) {
   #main .imageCol img {
-    left: -34%;
+    left: -43%;
+  }
+}
+
+@media only screen and (max-width: 1000px) {
+  #main .imageCol img {
+    left: -51%;
   }
 }
 
 @media only screen and (max-width: 767px) {
   #banner {
     h2 {
-      font-size: 0.875rem;
+      font-size: 0.75rem;
       padding-left: 0.1rem;
       margin-bottom: 0.15rem;
     }
@@ -506,7 +549,7 @@ export default {
 
     label {
       font-size: 1.063rem;
-      margin-bottom: 0.75rem;
+      margin-bottom: 0.5rem;
     }
 
     .custom-checkbox {
@@ -542,11 +585,11 @@ export default {
 
     .button {
       padding-top: 1rem;
-      padding-bottom: 2rem;
+      padding-bottom: 2.5rem;
     }
 
     .underbg {
-      height: 19.5%;
+      height: 18%;
     }
   }
 }

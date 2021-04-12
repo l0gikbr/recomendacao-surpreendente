@@ -71,15 +71,16 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 6.5rem;
+  height: 5.5rem;
   background-color: $blue;
   border-radius: 0;
   transition: all .4s;
   color: #fff;
   font-size: 1.875rem;
-  padding: .2rem .75rem;
-  width: 100%;
+  padding: .2rem 4.75rem;
+  // width: 100%;
   border-radius: 4.25rem;
+  margin: 0 auto;
 
   &:active, &:hover{
       background-color: #35BBFA;
@@ -169,6 +170,7 @@ body {
   .btn-azul {
     font-size: .945rem;
     height: 3.438rem;
+    padding: .2rem 3rem;
   }
 
   .loader {

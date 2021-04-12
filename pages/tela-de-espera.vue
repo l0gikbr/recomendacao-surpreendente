@@ -2,7 +2,7 @@
   <div>
     <blueTrack position="upper" />
     <section id="bannerTelaEspera">
-      <picture>
+      <!-- <picture>
         <source
           media="(max-width: 767px)"
           :srcset="require('@/assets/img/banner-tela-de-espera_mobile.png')"
@@ -13,27 +13,24 @@
           alt="Banner"
           class="img-fluid"
         />
-      </picture>
+      </picture> -->
 
-      <div class="wrap-container">
-        <div class="container">
-          <div class="inner">
-            <titulo />
+      <div class="container">
+        <div class="inner">
+          <titulo />
 
-            <countdown :duration="20" />
+          <countdown :duration="20" />
 
-            <h4 class="d-none d-md-block">
-              Aguarde para <strong>esclarecer dúvidas</strong> de alguém que
-              quer<br />
-              comprar o mesmo <strong>produto Midea</strong> que você comprou.
-            </h4>
+          <h4 class="d-none d-md-block">
+            Aguarde para <strong>esclarecer dúvidas</strong> de alguém que
+            quer<br />
+            comprar o mesmo <strong>produto Midea</strong> que você comprou.
+          </h4>
 
-            <h4 class="d-md-none">
-              Aguarde para <strong>esclarecer dúvidas</strong> de alguém que
-              quer comprar o mesmo <strong>produto Midea</strong> que você
-              comprou.
-            </h4>
-          </div>
+          <h4 class="d-md-none">
+            Aguarde para <strong>esclarecer dúvidas</strong> de alguém que quer
+            comprar o mesmo <strong>produto Midea</strong> que você comprou.
+          </h4>
         </div>
       </div>
     </section>
@@ -57,6 +54,10 @@ export default {
 <style lang="scss">
 #bannerTelaEspera {
   position: relative;
+  background: url('@/assets/img/banner-tela-de-espera.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
 
   h4 {
     font-size: 2.5rem;
@@ -81,6 +82,7 @@ export default {
   .inner {
     text-align: center;
     color: #fff;
+    padding: 13.5rem 0 9.5rem 0;
   }
 }
 
@@ -88,6 +90,10 @@ export default {
   #bannerTelaEspera {
     h4 {
       font-size: 1.15rem;
+    }
+
+    .inner {
+      padding: 6rem 0 5rem 0;
     }
   }
 }
