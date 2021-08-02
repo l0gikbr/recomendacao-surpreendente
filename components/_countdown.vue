@@ -45,7 +45,12 @@ export default {
       timerInterval: null,
       timePassed: 0,
       displayBlueRing: true,
-      call: [{ id: '39jdjk', id_meet: 'ums-hufo-qgw', default: true }],
+      call: [
+        { id: '39jdjk', default: true },
+        { id: 'y4jqxz' },
+        { id: '1n0ojk' },
+        { id: '6yqsqi' },
+      ],
     }
   },
   computed: {
@@ -111,12 +116,11 @@ export default {
         }
 
         if (searchedItem) {
-          window.location.href =
-            'https://meet.google.com/' + searchedItem.id_meet
+          window.location.href = 'https://meet.jit.si/Midea-' + searchedItem.id
         } else if (!searchedItem && callId.length > 0) {
           window.location.href =
-            'https://meet.google.com/' +
-            this.call.find((element) => element.default === true).id_meet
+            'https://meet.jit.si/Midea-' +
+            this.call.find((element) => element.default === true).id
         } else {
           window.location.reload()
         }
